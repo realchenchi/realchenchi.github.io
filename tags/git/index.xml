@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on 马野先生</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on 马野先生</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>动画图解 Git 命令，一看就懂</title>
+      <link>/post/2020-05-14%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-05-14%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
+      <description>本文由 简悦 SimpRead 转码， 原文地址 https://segmentfault.com/a/1190000022404482
+ 无论是开发、运维，还是测试，大家都知道 Git 在日常工作中的地位。所以，也是大家的必学、必备技能之一。之前公众号也发过很多 git 相关的文章。
+但是呢，民工哥，也经常在后台看到读者说，命令太多了不好记啊，时间长了不用又忘记了等等的吐槽。是啊，要学一门技术真难，何况现在技术更新、迭代这么快&amp;hellip;..
+所以，对于学习 Git 这门技术，要是有一个一看就懂，一学就会的入门资料就好了。前不久，国外的一位小姐姐写了一篇这样的文章《CS Visualized: Useful Git Commands》。作者是来自英属哥伦比亚的小姐姐 Lydia Hallie，在这篇文章里面，她通过生动形象的动画，以更加直观的方式，向开发者展示 Git 命令中的 merge、rebase、reset、revert、cherry-pick 等常用骚操作的具体原理。
+下面就给大家带来一些实例分享：
+1、git merge
+fast-forward 模式
+no-fast-forward 模式
+合并冲突修复的过程 ，动画演示如下：
+2、git rebase
+git rebase 指令会复制当前分支的所有最新提交，然后将这些提交添加到指定分支提交记录之上。
+git rebase 还提供了 6 种操作模式：
+ reword：修改提交信息 edit：修改此提交 squash：将当前提交合并到之前的提交中 fixup：将当前提交合并到之前的提交中，不保留提交日志消息 exec：在每一个需要变基的提交上执行一条命令 drop：删除提交  以 drop 为例：
+以 squash 为例：
+3、git reset
+以下图为例：9e78i 提交添加了 style.css 文件，035cc 提交添加了 index.js 文件。使用软重置，我们可以撤销提交记录，但是保留新建的 style.css 和 index.</description>
+    </item>
+    
+  </channel>
+</rss>
