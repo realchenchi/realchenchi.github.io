@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术</title>
+      <link>/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>杂谈</title>
@@ -17,15 +26,6 @@
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/%E6%9D%82%E8%B0%88/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技术</title>
-      <link>/categories/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     

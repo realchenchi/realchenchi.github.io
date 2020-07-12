@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Sat, 23 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>社保</title>
@@ -30,16 +39,7 @@
     </item>
     
     <item>
-      <title>git</title>
-      <link>/tags/git/</link>
-      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
+      <title>Markdown</title>
       <link>/tags/markdown/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
