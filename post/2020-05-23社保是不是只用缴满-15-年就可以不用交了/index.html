@@ -942,6 +942,8 @@
 <p>如果职工发生工伤，他的伤残津贴、工伤职工一次性伤残补助金等等待遇的发放，都参照职工申报的缴费基数计算。</p>
 </blockquote>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -956,7 +958,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -996,8 +998,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

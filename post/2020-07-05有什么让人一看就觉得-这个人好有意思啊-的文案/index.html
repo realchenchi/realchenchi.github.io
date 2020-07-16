@@ -899,6 +899,8 @@
 <p>专注沙雕文案 20 年，喜欢请给梨一个赞~~</p>
 <p><img src="https://pic4.zhimg.com/v2-5bc9a52417a64ff70bb2928d94f2f3db_r.jpg" alt=""></p>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -913,7 +915,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -953,8 +955,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

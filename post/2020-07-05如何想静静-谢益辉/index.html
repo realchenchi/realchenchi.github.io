@@ -95,6 +95,8 @@
 <p>如何想静静？要我说，不净者不静，卸下名缰利锁，轻装上阵才能更快找到静静；浅虑者不静，播种后立刻盼着结果、一看没有果实就放弃或立刻播新种，永远在焦虑绝望的牢笼中左冲右突，不知这牢笼除了日复一日用牙对准一点死磨，并无它法可开，也不知牢笼外的自由完全值得这份咬磨的耐心；无根者不静，身世浮沉雨打萍，无法立足，只有长时间堆砌大小成果、有了十足的底气之后才能静下来。</p>
 <p>每当你觉得臣妾做不到的时候，不妨再读一遍《<a href="https://yihui.org/cn/2014/12/the-gadfly/">别声张</a>》。留点时间给自己，好在恍恍惚惚的生活中能留下一点印迹。当然，也不要光听我忽悠，若迷信我的话小心连年都过错。有人可能会在静静中爆发，有人会在静静中灭亡。我静静积攒半年日志发出来一定还有人批阅，而你可能静三天不更新日志客人就走光了。想清楚你的追求，并采用合适的手段实现。小马过河，深浅自己去试。</p>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -109,7 +111,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -149,8 +151,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

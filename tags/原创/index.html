@@ -74,7 +74,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -114,8 +114,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

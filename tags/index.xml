@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>影评</title>
+      <link>/tags/%E5%BD%B1%E8%AF%84/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%BD%B1%E8%AF%84/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Git</title>
@@ -21,20 +30,56 @@
     </item>
     
     <item>
-      <title>社保</title>
-      <link>/tags/%E7%A4%BE%E4%BF%9D/</link>
-      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      <title>人文</title>
+      <link>/tags/%E4%BA%BA%E6%96%87/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E7%A4%BE%E4%BF%9D/</guid>
+      <guid>/tags/%E4%BA%BA%E6%96%87/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>分布式系统</title>
-      <link>/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</link>
+      <title>文案</title>
+      <link>/tags/%E6%96%87%E6%A1%88/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%96%87%E6%A1%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社会</title>
+      <link>/tags/%E7%A4%BE%E4%BC%9A/</link>
+      <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E7%A4%BE%E4%BC%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>交易系统</title>
+      <link>/tags/%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>/tags/%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>分布式</title>
+      <link>/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>财政</title>
+      <link>/tags/%E8%B4%A2%E6%94%BF/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E8%B4%A2%E6%94%BF/</guid>
       <description></description>
     </item>
     
@@ -62,15 +107,6 @@
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生存</title>
-      <link>/tags/%E7%94%9F%E5%AD%98/</link>
-      <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E7%94%9F%E5%AD%98/</guid>
       <description></description>
     </item>
     

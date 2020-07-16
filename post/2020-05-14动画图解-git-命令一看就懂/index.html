@@ -111,6 +111,8 @@
 <em>民工哥通过翻译作者原文再加上一些个人理解总结而成，版权归原作者所有，纯属技术分享，不作为商业目的。</em></p>
 </blockquote>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -125,7 +127,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -165,8 +167,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

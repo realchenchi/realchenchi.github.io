@@ -143,6 +143,8 @@ git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的
 <p>如果远程分支是与当前分支合并，则冒号后面的部分可以省略：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git pull origin next</code></pre></div>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -157,7 +159,7 @@ git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -197,8 +199,8 @@ git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>

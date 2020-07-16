@@ -139,6 +139,8 @@
 <p><strong>方乐明</strong>，现任微信支付应用产品系统负责人，主要从事微信红包、微信转账、微信群收款等支付应用产品的系统设计、可用性提升、高性能解决方案设计等，曾负责 2015、2016 和 2017 年春节微信红包系统的性能优化与稳定性提升，取得良好的效果。</p>
 <p>感谢<a href="http://www.infoq.com/cn/author/%E9%9F%A9%E5%A9%B7">韩婷</a>对本文的策划和审校。</p>
 
+    <br>
+    <hr>
     <h2><a href="/">返回主页</a></h2>
 </div>
 
@@ -153,7 +155,7 @@
 
     马野先生
 
-<span id="thisyear">2020</span>
+<span id="thisyear"></span>
 
     | <a href="https://space.bilibili.com/3490374">B站</a>
 
@@ -193,8 +195,8 @@
         speedFactor: 2.5 
     };
 
-    
-    function ThisYear() {
-        document.getElementById('thisyear').innerHTML = new Date().getFullYear();
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
     };
-</script></html>
+</script>
+</html>
