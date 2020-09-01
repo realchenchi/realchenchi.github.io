@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh_CN"><head>
+    <title>马野先生</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="//favicon.ico">
+    <link rel="canonical" href="/">
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+            <a class="brand" href="/">马野先生</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+                    
+                        
+                            <li>
+                                <a href="/post/">
+                                    
+                                    <span>博客</span>
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <a href="/about/">
+                                    
+                                    <span>关于我</span>
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav><div id="content" class="container">
+
+<div class="row-fluid navmargin">
+    <div class="page-header">
+        <h1>Git Fetch &amp; Pull 详解 - 2020年07月13日</h1>
+    </div>
+    <p class="lead"></p>
+    <blockquote>
+<p>本文由 <a href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a href="https://www.cnblogs.com/runnerjack/p/9342362.html">www.cnblogs.com</a></p>
+</blockquote>
+<h2 id="1简单概括">1、简单概括</h2>
+<p>先用一张图来理一下<code>git fetch</code>和<code>git pull</code>的概念：</p>
+<p><img src="https://kmknkk.oss-cn-beijing.aliyuncs.com/image/git.jpg" alt=""></p>
+<p>可以简单的概括为：</p>
+<p><code>git fetch</code>是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。</p>
+<p>而<code>git pull</code>则是将远程主机的最新内容拉下来后直接合并，即：<code>git pull = git fetch + git merge</code>，这样可能会产生冲突，需要手动解决。</p>
+<p>下面我们来详细了解一下<code>git fetch</code>和<code>git pull</code>的用法。</p>
+<h2 id="2分支的概念">2、分支的概念</h2>
+<p>在介绍两种方法之前，我们需要先了解一下分支的概念：
+分支是用来标记特定代码的提交，每一个分支通过 SHA1sum 值来标识，所以对分支的操作是轻量级的，你改变的仅仅是 SHA1sum 值。</p>
+<p>如下图所示，当前有 2 个分支，A,C,E 属于 master 分支，而 A,B，D,F 属于 dev 分支。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">A----C----E（master）
+ <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  B---D---F<span style="color:#f92672">(</span>dev<span style="color:#f92672">)</span></code></pre></div>
+<p>它们的 head 指针分别指向 E 和 F，对上述做如下操作：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout master  //选择or切换到master分支
+git merge dev        //将dev分支合并到当前分支<span style="color:#f92672">(</span>master<span style="color:#f92672">)</span>中</code></pre></div>
+<p>合并完成后：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">A---C---E---G<span style="color:#f92672">(</span>master<span style="color:#f92672">)</span>
+ <span style="color:#ae81ff">\ </span>        /
+  B---D---F（dev）</code></pre></div>
+<p>现在 ABCDEFG 属于 master，G 是一次合并后的结果，是将 E 和Ｆ的代码合并后的结果，可能会出现冲突。而 ABDF 依然属于 dev 分支。可以继续在 dev 的分支上进行开发:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">A---C---E---G---H<span style="color:#f92672">(</span>master<span style="color:#f92672">)</span>
+ <span style="color:#ae81ff">\ </span>        /
+  B---D---F---I（dev）</code></pre></div>
+<p>分支（branch）的基本操作：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch //查看本地所有分支 
+
+git branch -r //查看远程所有分支
+
+git branch -a //查看本地和远程的所有分支
+
+git branch &lt;branchname&gt; //新建分支
+
+git branch -d &lt;branchname&gt; //删除本地分支
+
+git branch -d -r &lt;branchname&gt; //删除远程分支，删除后还需推送到服务器
+git push origin:&lt;branchname&gt;  //删除后推送至服务器
+
+git branch -m &lt;oldbranch&gt; &lt;newbranch&gt; //重命名本地分支
+/**
+*重命名远程分支：
+*1、删除远程待修改分支
+*2、push本地新分支到远程服务器
+*/
+
+//git中一些选项解释:
+
+-d
+--delete：删除
+
+-D
+--delete --force的快捷键
+
+-f
+--force：强制
+
+-m
+--move：移动或重命名
+
+-M
+--move --force的快捷键
+
+-r
+--remote：远程
+
+-a
+--all：所有</code></pre></div>
+<h2 id="3git-fetch-用法">3、git fetch 用法</h2>
+<p>git fetch 命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git fetch &lt;远程主机名&gt; //这个命令将某个远程主机的更新全部取回本地</code></pre></div>
+<p>如果只想取回特定分支的更新，可以指定分支名：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git fetch &lt;远程主机名&gt; &lt;分支名&gt; //注意之间有空格</code></pre></div>
+<p>最常见的命令如取回<code>origin</code>主机的<code>master</code>分支：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git fetch origin master</code></pre></div>
+<p>取回更新后，会返回一个<code>FETCH_HEAD</code>，指的是某个 branch 在服务器上的最新状态，我们可以在本地通过它查看刚取回的更新信息：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git log -p FETCH_HEAD</code></pre></div>
+<p>如图：<br>
+<img src="https://kmknkk.oss-cn-beijing.aliyuncs.com/image/fetch.png" alt=""></p>
+<p>可以看到返回的信息包括更新的文件名，更新的作者和时间，以及更新的代码（19 行红色 [删除] 和绿色 [新增] 部分）。</p>
+<p>我们可以通过这些信息来判断是否产生冲突，以确定是否将更新 merge 到当前分支。</p>
+<h2 id="4git-pull-用法">4、git pull 用法</h2>
+<p>前面提到，<code>git pull</code>的过程可以理解为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git fetch origin master //从远程主机的master分支拉取最新内容 
+git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的分支中</code></pre></div>
+<p>即将远程主机的某个分支的更新取回，并与本地指定的分支合并，完整格式可表示为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></pre></div>
+<p>如果远程分支是与当前分支合并，则冒号后面的部分可以省略：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git pull origin next</code></pre></div>
+
+    <br>
+    <hr>
+    <h2><a href="/">返回主页</a></h2>
+</div>
+
+
+        </div><footer class="container">
+    <hr class="soften">
+    <p>
+
+    一孔之见，姑妄言之 | 
+
+&copy; 
+
+    马野先生
+
+<span id="thisyear"></span>
+
+    | <a href="https://space.bilibili.com/3490374">B站</a>
+
+
+</p>
+    <p class="text-center">
+        
+        
+        
+        
+        
+    </p>
+</footer>
+
+</body><link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap-386.js"></script>
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap-affix.js"></script>
+<script>
+    _386 = { 
+        fastLoad: false ,
+        onePass: false , 
+        speedFactor: 2.5 
+    };
+
+    window.onload = function ThisYear() {
+        document.getElementById('thisyear').innerHTML = "2019-" + new Date().getFullYear();
+    };
+</script>
+</html>

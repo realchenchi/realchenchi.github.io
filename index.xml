@@ -6,10 +6,61 @@
     <description>Recent content on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
-    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Bean工作原理详解</title>
+      <link>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</guid>
+      <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
+  本文 Github 开源项目 https://github.com/Snailclimb/JavaGuide，只供自己学习总结无商业用途，如有侵权，联系删除
+ 前言 在 Spring 中，那些组成应用程序的主体及由 Spring IOC 容器所管理的对象，被称之为 bean。简单地讲，bean 就是由 IOC 容器初始化、装配及管理的对象，除此之外，bean 就与应用程序中的其他对象没有什么区别了。而 bean 的定义以及 bean 相互间的依赖关系将通过配置元数据来描述。
+Spring 中的 bean 默认都是单例的，这些单例 Bean 在多线程程序下如何保证线程安全呢？ 例如对于 Web 应用来说，Web 容器对于每个用户请求都创建一个单独的 Sevlet 线程来处理请求，引入 Spring 框架之后，每个 Action 都是单例的，那么对于 Spring 托管的单例 Service Bean，如何保证其安全呢？ Spring 的单例是基于 BeanFactory 也就是 Spring 容器的，单例 Bean 在此容器内只有一个，Java 的单例是基于 JVM，每个 JVM 内只有一个实例。
+bean 的作用域 创建一个 bean 定义，其实质是用该 bean 定义对应的类来创建真正实例的 “配方”。把 bean 定义看成一个配方很有意义，它与 class 很类似，只根据一张“处方” 就可以创建多个实例。不仅可以控制注入到对象中的各种依赖和配置值，还可以控制该对象的作用域。这样可以灵活选择所建对象的作用域，而不必在 Java Class 级定义作用域。Spring Framework 支持五种作用域，分别阐述如下表。</description>
+    </item>
+    
+    <item>
+      <title>《走向共和》有哪些会误导人的错误</title>
+      <link>/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <description>本文由 简悦 SimpRead 转码， 原文地址 www.zhihu.com 杨爱红
+ 说一个不在《走向共和》剧情之内、而在其剧情之外的大误会。
+我印象中知乎上有过关于 “《走向共和》为何被禁” 的讨论（可惜我刚搜了一下只搜到了几篇毫无营养的你抄我我抄你的文章），不少大 V 级知友也参与过那场讨论，最后得到普遍赞成的观点大致有这么两点：
+第一，《走向共和》制作方发行方非常非常牛 X、非常非常官方，连主题歌都是 XXX 和 XXX 唱的，根本不可能被禁。
+第二，这部剧拍得太好了、太神了，但叫好不叫座、收视率惨淡，所以后来就没有电视台播了，这是个商业问题而不是政治问题。
+我曾长期以为上面这两点就是全部真相了，直到今天偶然看到这篇《张海鹏发言：在重大意识形态问题上不能含含糊糊、遮遮掩掩》。
+提示信息 - 红歌会网 - 手机版​m.szhgh.com
+这篇文章讲清楚了《走向共和》从湖南台到央视播出的前因后果：
+还讲清楚了为什么央视播完《走向共和》之后就再无电视台播放这部剧：
+此文作者张海鹏，是社科院学部委员、曾任中国史学会会长，文中提到的名字（也就是我打马赛克的部分）层级非常高，想来这篇文章应该没有撒谎。所以事情很清楚了：《走向共和》确确实实被禁了，而且确确实实是因为政治不正确而被禁的。
+这里我不打算讨论这部剧是不是真的政治不正确、也不打算讨论国朝对文艺作品管制的正当性；我想说的是，从知友们对 “《走向共和》被禁” 一事的误解来看，很多人还有更大一层的误解，即把 XX 当作铁板一块、认为有了谁谁谁的背书就一定代表 XX 的意志。
+——其实不是的，XX 并不是铁板一块，其内部始终充满了不同集团、不同人之间的博弈（用老话来讲就是 “路线斗争”）。这也是文艺作品管制黑箱化、玄学化的根本原因：管制者自己都精神分裂、云里雾里，自然不可能指望它以其昏昏、使人昭昭。
+（这样的铁板一块式误解，倒是跟《走向共和》对日本亿兆同心式的夸张描绘异曲同工啊 23333
+顺便一提，湖南方面对《走向共和》可真是念念不忘：
+省委书记给 600 多位 “90 后”“00 后” 作报告：人家 “富二代” 都在拼命奋斗，你有什么理由不奋斗？​mp.weixin.qq.com
+下面这段真是讲得太有道理了：
+马伯庸​
+当年我第一次看《走向共和》，看到第 23 集时最为震惊。这一集主要讲的是戊戌六君子就义。谭嗣同慨然吟出一首绝命诗：
+等等，这首诗跟我小时候背的不一样啊。别的不说，“我自横刀向天笑，去留肝胆两昆仑”，这是多脍炙人口的名句啊。
+接下来，康有为、梁启超在海外召开记者会，在会上梁启超动情地谈起了谭嗣同的绝命诗：
+这回的词儿总算是我熟悉的了，可剧情上却前后不一致。到底谭嗣同写的是哪一首啊？
+突然，记者群里跳出一个叫王照的人，直斥梁启超为了争取同情，篡改了谭嗣同的诗。
+这可真是令人震惊了，原来谭嗣同那么有名的诗，居然是伪造的。这可真是令人玩味的历史真相。
+剧中说破这件事的王照，并非虚构人物。百日维新中，他担任礼部主事，因直言顶撞上司，咆哮公堂，却得到光绪帝赞赏，革了礼部六位堂官。戊戌变法失败之后，他也逃到了日本，却和康、梁分道扬镳，到处对人说康、梁各种为了宣传而造假的事情，并披露了很多变法内幕。后世研究戊戌，王照的回忆也是重要的史料来源。
+虽然在史实上，王照没有在记者会上直斥过梁启超，也没提出过谭嗣同伪诗论，但编剧把这个人物安排在这里，恰如其分，是下过功夫的。
+那么，这个梁启超伪造谭诗的桥段，是编剧原创的吗？
+不是。
+这个伪诗的说法，是出自《温故戊戌年》转引的台湾学者黄彰健《戊戌变法史研究》。
+那么黄彰健又是从何而知呢？
+按照黄彰健在《论今传谭嗣同狱中题壁诗曾经梁启超改易》这一章的考据，他找到了一本出版于光绪三十四年的《绣像康梁演义》，里面说六君子伏法之前，林旭忽然吟了两首诗：</description>
+    </item>
     
     <item>
       <title>《走向共和》有哪些会误导人的错误</title>
@@ -51,10 +102,10 @@
     
     <item>
       <title>Git Fetch &amp; Pull 详解</title>
-      <link>/post/2020-07-13git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
+      <link>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
  1、简单概括 先用一张图来理一下git fetch和git pull的概念：
 可以简单的概括为：
@@ -70,10 +121,10 @@ A---C---E---G(master) \  / B---D---F（dev） 现在 ABCDEFG 属于 master，G �
     
     <item>
       <title>Git Rebase 原理</title>
-      <link>/post/2020-07-13git-rebase-%E5%8E%9F%E7%90%86/</link>
+      <link>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13git-rebase-%E5%8E%9F%E7%90%86/</guid>
+      <guid>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 segmentfault.com
   原文地址
 Git 系列文章地址
@@ -95,10 +146,10 @@ Git 系列文章地址
     
     <item>
       <title>如何想静静-谢益辉</title>
-      <link>/post/2020-07-05%E5%A6%82%E4%BD%95%E6%83%B3%E9%9D%99%E9%9D%99-%E8%B0%A2%E7%9B%8A%E8%BE%89/</link>
+      <link>/post/2020-07-05-%E5%A6%82%E4%BD%95%E6%83%B3%E9%9D%99%E9%9D%99-%E8%B0%A2%E7%9B%8A%E8%BE%89/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-05%E5%A6%82%E4%BD%95%E6%83%B3%E9%9D%99%E9%9D%99-%E8%B0%A2%E7%9B%8A%E8%BE%89/</guid>
+      <guid>/post/2020-07-05-%E5%A6%82%E4%BD%95%E6%83%B3%E9%9D%99%E9%9D%99-%E8%B0%A2%E7%9B%8A%E8%BE%89/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 yihui.org
  谢益辉 / 2019-07-19  约两周前有一位素不相识的文波兄来函，希望我写篇博客谈谈我如何静下心来研究一个东西，原因是他见我似乎产出颇丰：比如我作为一个非科班出身的码农，Github 打卡比他（专业码农）还勤得多，而且保持了六七年的满格；还有我自从 2005 年以来的这一两千篇中英文日志，看起来也有点厉害的样子。
 这要分两头说。一方面是我真实的厉害与别人想象的我的厉害有多大差距，另一方面是我怎么做到把这些数字撑到远大于一般人的成绩。我觉得毫无疑问，别人到我的个人网站来溜达一圈，对我的实力评估肯定超出我真正的实力一大截。这些表面上的数字都有水分，比如有些 Github 打卡是自动的（我会每日自动编译一些包）、我写的日志里也有很多流水账、我简历页面上那超长一串演讲和报告几乎包含了我人生中所有的报告（包括课堂作业报告），所以初来乍到的客官们大可不必看了这些数量级后纳头就拜。
@@ -123,10 +174,10 @@ Git 系列文章地址
     
     <item>
       <title>有什么让人一看就觉得 “这个人好有意思啊” 的文案</title>
-      <link>/post/2020-07-05%E6%9C%89%E4%BB%80%E4%B9%88%E8%AE%A9%E4%BA%BA%E4%B8%80%E7%9C%8B%E5%B0%B1%E8%A7%89%E5%BE%97-%E8%BF%99%E4%B8%AA%E4%BA%BA%E5%A5%BD%E6%9C%89%E6%84%8F%E6%80%9D%E5%95%8A-%E7%9A%84%E6%96%87%E6%A1%88/</link>
+      <link>/post/2020-07-05-%E8%AE%A9%E4%BA%BA%E4%B8%80%E7%9C%8B%E5%B0%B1%E8%A7%89%E5%BE%97-%E8%BF%99%E4%B8%AA%E4%BA%BA%E5%A5%BD%E6%9C%89%E6%84%8F%E6%80%9D%E5%95%8A-%E7%9A%84%E6%96%87%E6%A1%88/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-05%E6%9C%89%E4%BB%80%E4%B9%88%E8%AE%A9%E4%BA%BA%E4%B8%80%E7%9C%8B%E5%B0%B1%E8%A7%89%E5%BE%97-%E8%BF%99%E4%B8%AA%E4%BA%BA%E5%A5%BD%E6%9C%89%E6%84%8F%E6%80%9D%E5%95%8A-%E7%9A%84%E6%96%87%E6%A1%88/</guid>
+      <guid>/post/2020-07-05-%E8%AE%A9%E4%BA%BA%E4%B8%80%E7%9C%8B%E5%B0%B1%E8%A7%89%E5%BE%97-%E8%BF%99%E4%B8%AA%E4%BA%BA%E5%A5%BD%E6%9C%89%E6%84%8F%E6%80%9D%E5%95%8A-%E7%9A%84%E6%96%87%E6%A1%88/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.zhihu.com 七七呀
    今年不想过了，麻烦退我一岁，谢谢
   听说女孩子说叠字很可爱？我我觉觉得得我我已已经经完完全全掌掌握握了了这这项项技技能能
@@ -151,10 +202,10 @@ Git 系列文章地址
     
     <item>
       <title>社保是不是只用缴满 15 年就可以不用交了</title>
-      <link>/post/2020-05-23%E7%A4%BE%E4%BF%9D%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%AA%E7%94%A8%E7%BC%B4%E6%BB%A1-15-%E5%B9%B4%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E4%BA%A4%E4%BA%86/</link>
+      <link>/post/2020-05-23-%E7%A4%BE%E4%BF%9D%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%AA%E7%94%A8%E7%BC%B4%E6%BB%A1-15-%E5%B9%B4%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E4%BA%A4%E4%BA%86/</link>
       <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-23%E7%A4%BE%E4%BF%9D%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%AA%E7%94%A8%E7%BC%B4%E6%BB%A1-15-%E5%B9%B4%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E4%BA%A4%E4%BA%86/</guid>
+      <guid>/post/2020-05-23-%E7%A4%BE%E4%BF%9D%E6%98%AF%E4%B8%8D%E6%98%AF%E5%8F%AA%E7%94%A8%E7%BC%B4%E6%BB%A1-15-%E5%B9%B4%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%B8%8D%E7%94%A8%E4%BA%A4%E4%BA%86/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://www.zhihu.com/question/47845109 保贝说保
  相信我，这篇文章是全网给社保小白的一篇最干最全的科普文。
 为了写这篇大文章，我花了将近一年的时间，调研了几百篇社保文章，义务回答了五六千条知乎网友的评论和私信，然后和各地社保部门打了几百个电话搜集资料，就是为了确保我写的每一条信息都准确，并真的用的上。
@@ -190,10 +241,10 @@ Git 系列文章地址
     
     <item>
       <title>百亿级微信红包的高并发资金交易系统设计方案</title>
-      <link>/post/2020-05-19%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
+      <link>/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-19%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
+      <guid>/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://www.infoq.cn/article/2017hongbao-weixin
  2017 年 1 月 28 日，正月初一，微信公布了用户在除夕当天收发微信红包的数量——142 亿个，而其收发峰值也已达到 76 万每秒。百亿级别的红包，如何保障并发性能与资金安全？这给微信带来了超级挑战。面对挑战，微信红包在分析了业界 “秒杀” 系统解决方案的基础上，采用了 SET 化、请求排队串行化、双维度分库表等设计，形成了独特的高并发、资金安全系统解决方案。实践证明，该方案表现稳定，且实现了除夕夜系统零故障运行。
 本文将为读者介绍百亿级别红包背后的系统高并发设计方案，包括微信红包的两大业务特点、微信红包系统的技术难点、解决高并发问题通常使用的方案，以及微信红包系统的高并发解决方案。
@@ -210,10 +261,10 @@ Git 系列文章地址
     
     <item>
       <title>曹远征：中国现在还远未到财政赤字货币化的地步</title>
-      <link>/post/2020-05-18%E6%9B%B9%E8%BF%9C%E5%BE%81%E4%B8%AD%E5%9B%BD%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%BF%9C%E6%9C%AA%E5%88%B0%E8%B4%A2%E6%94%BF%E8%B5%A4%E5%AD%97%E8%B4%A7%E5%B8%81%E5%8C%96%E7%9A%84%E5%9C%B0%E6%AD%A5/</link>
+      <link>/post/2020-05-18-%E6%9B%B9%E8%BF%9C%E5%BE%81%E4%B8%AD%E5%9B%BD%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%BF%9C%E6%9C%AA%E5%88%B0%E8%B4%A2%E6%94%BF%E8%B5%A4%E5%AD%97%E8%B4%A7%E5%B8%81%E5%8C%96%E7%9A%84%E5%9C%B0%E6%AD%A5/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-18%E6%9B%B9%E8%BF%9C%E5%BE%81%E4%B8%AD%E5%9B%BD%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%BF%9C%E6%9C%AA%E5%88%B0%E8%B4%A2%E6%94%BF%E8%B5%A4%E5%AD%97%E8%B4%A7%E5%B8%81%E5%8C%96%E7%9A%84%E5%9C%B0%E6%AD%A5/</guid>
+      <guid>/post/2020-05-18-%E6%9B%B9%E8%BF%9C%E5%BE%81%E4%B8%AD%E5%9B%BD%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%BF%9C%E6%9C%AA%E5%88%B0%E8%B4%A2%E6%94%BF%E8%B5%A4%E5%AD%97%E8%B4%A7%E5%B8%81%E5%8C%96%E7%9A%84%E5%9C%B0%E6%AD%A5/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 http://finance.sina.com.cn/zl/china/2020-05-18/zl-iirczymk2276930.shtml
   　意见领袖辩论财政赤字货币化
  　文 / 新浪财经意见领袖专栏（微信公众号 kopleader）专栏作家 曹远征
@@ -236,10 +287,10 @@ Git 系列文章地址
     
     <item>
       <title>动画图解 Git 命令，一看就懂</title>
-      <link>/post/2020-05-14%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
+      <link>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-14%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
+      <guid>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://segmentfault.com/a/1190000022404482
  无论是开发、运维，还是测试，大家都知道 Git 在日常工作中的地位。所以，也是大家的必学、必备技能之一。之前公众号也发过很多 git 相关的文章。
 但是呢，民工哥，也经常在后台看到读者说，命令太多了不好记啊，时间长了不用又忘记了等等的吐槽。是啊，要学一门技术真难，何况现在技术更新、迭代这么快&amp;hellip;..
@@ -260,10 +311,10 @@ git rebase 还提供了 6 种操作模式：
     
     <item>
       <title>我们穷极一生，究竟追寻的是什么</title>
-      <link>/post/2020-05-14%E6%88%91%E4%BB%AC%E7%A9%B7%E6%9E%81%E4%B8%80%E7%94%9F%E7%A9%B6%E7%AB%9F%E8%BF%BD%E5%AF%BB%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>/post/2020-05-14-%E6%88%91%E4%BB%AC%E7%A9%B7%E6%9E%81%E4%B8%80%E7%94%9F%E7%A9%B6%E7%AB%9F%E8%BF%BD%E5%AF%BB%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-14%E6%88%91%E4%BB%AC%E7%A9%B7%E6%9E%81%E4%B8%80%E7%94%9F%E7%A9%B6%E7%AB%9F%E8%BF%BD%E5%AF%BB%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>/post/2020-05-14-%E6%88%91%E4%BB%AC%E7%A9%B7%E6%9E%81%E4%B8%80%E7%94%9F%E7%A9%B6%E7%AB%9F%E8%BF%BD%E5%AF%BB%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://www.zhihu.com/question/384441334/answer/1148006120 非流
   王羲之说：夫人之相与，俯仰一世，或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。
  人这一生，如昙花一现。如草木春绿秋枯，如曦月东升西落。
@@ -302,46 +353,46 @@ git rebase 还提供了 6 种操作模式：
     
     <item>
       <title>Markdown语法</title>
-      <link>/post/2020-05-11markdown%E8%AF%AD%E6%B3%95/</link>
+      <link>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-11markdown%E8%AF%AD%E6%B3%95/</guid>
+      <guid>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>留学生回来报效祖国，却惨遭。。。</title>
-      <link>/post/2020-05-01%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</link>
+      <link>/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-01%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</guid>
+      <guid>/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>留学生回国航班被取消，近一个月不敢出门，他想对大家说</title>
-      <link>/post/2020-04-04%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</link>
+      <link>/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-04-04%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</guid>
+      <guid>/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>币圈那些公开的秘密</title>
-      <link>/post/2020-02-29%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</link>
+      <link>/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-02-29%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
+      <guid>/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>孤岛求生The Island 第一季 全集</title>
-      <link>/post/2015-06-06%E5%AD%A4%E5%B2%9B%E6%B1%82%E7%94%9F/</link>
+      <link>/post/2015-06-06-%E5%AD%A4%E5%B2%9B%E6%B1%82%E7%94%9F/</link>
       <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-06-06%E5%AD%A4%E5%B2%9B%E6%B1%82%E7%94%9F/</guid>
+      <guid>/post/2015-06-06-%E5%AD%A4%E5%B2%9B%E6%B1%82%E7%94%9F/</guid>
       <description> </description>
     </item>
     
