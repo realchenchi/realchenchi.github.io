@@ -256,10 +256,10 @@ Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初�
 <li>当要销毁 Bean 的时候，如果 Bean 实现了 DisposableBean 接口，执行 destroy() 方法。</li>
 <li>当要销毁 Bean 的时候，如果 Bean 在配置文件中的定义包含 destroy-method 属性，执行指定的方法。</li>
 </ul>
-<p>用图表示一下 (图来源:<a href="http://www.jianshu.com/p/d00539babca5">http://www.jianshu.com/p/d00539babca5</a>)：</p>
-<p><img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-17/48376272.jpg" alt=""></p>
+<p>用图表示一下：</p>
+<p><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-17/48376272.jpg" alt=""></p>
 <p>与之比较类似的中文版本:</p>
-<p><img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-17/5496407.jpg" alt=""></p>
+<p><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-17/5496407.jpg" alt=""></p>
 <p><strong>其实很多时候我们并不会真的去实现上面说描述的那些接口，那么下面我们就除去那些接口，针对 bean 的单例和非单例来描述下 bean 的生命周期：</strong></p>
 <h2 id="单例管理的对象">单例管理的对象</h2>
 <p>当 scope=”singleton”，即默认情况下，会在启动容器时（即实例化容器时）时实例化。但我们可以指定 Bean 节点的 lazy-init=”true” 来延迟初始化 bean，这时候，只有在第一次获取 bean 时才会初始化 bean，即第一次请求该 bean 时才初始化。如下配置：</p>
