@@ -2,22 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>区块链 on 马野先生</title>
-    <link>/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+    <link>https://maye.netlify.app/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
     <description>Recent content in 区块链 on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>币圈那些公开的秘密</title>
-      <link>/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</link>
+      <link>https://maye.netlify.app/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
-      <description> </description>
+      <guid>https://maye.netlify.app/post/2020-02-29-%E5%B8%81%E5%9C%88%E9%82%A3%E4%BA%9B%E5%85%AC%E5%BC%80%E7%9A%84%E7%A7%98%E5%AF%86/</guid>
+      <description></description>
     </item>
     
   </channel>

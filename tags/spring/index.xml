@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring on 马野先生</title>
-    <link>/tags/spring/</link>
+    <link>https://maye.netlify.app/tags/spring/</link>
     <description>Recent content in Spring on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/spring/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Bean工作原理详解</title>
-      <link>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://maye.netlify.app/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://maye.netlify.app/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
   本文 Github 开源项目 https://github.com/Snailclimb/JavaGuide，只供自己学习总结无商业用途，如有侵权，联系删除
  前言 在 Spring 中，那些组成应用程序的主体及由 Spring IOC 容器所管理的对象，被称之为 bean。简单地讲，bean 就是由 IOC 容器初始化、装配及管理的对象，除此之外，bean 就与应用程序中的其他对象没有什么区别了。而 bean 的定义以及 bean 相互间的依赖关系将通过配置元数据来描述。

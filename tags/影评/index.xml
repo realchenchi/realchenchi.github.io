@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>影评 on 马野先生</title>
-    <link>/tags/%E5%BD%B1%E8%AF%84/</link>
+    <link>https://maye.netlify.app/tags/%E5%BD%B1%E8%AF%84/</link>
     <description>Recent content in 影评 on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%BD%B1%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/%E5%BD%B1%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《走向共和》有哪些会误导人的错误</title>
-      <link>/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <link>https://maye.netlify.app/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <guid>https://maye.netlify.app/post/2020-07-16-%E8%B5%B0%E5%90%91%E5%85%B1%E5%92%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%9A%E8%AF%AF%E5%AF%BC%E4%BA%BA%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.zhihu.com 杨爱红
  说一个不在《走向共和》剧情之内、而在其剧情之外的大误会。
 我印象中知乎上有过关于 “《走向共和》为何被禁” 的讨论（可惜我刚搜了一下只搜到了几篇毫无营养的你抄我我抄你的文章），不少大 V 级知友也参与过那场讨论，最后得到普遍赞成的观点大致有这么两点：

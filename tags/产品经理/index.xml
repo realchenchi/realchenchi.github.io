@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>产品经理 on 马野先生</title>
-    <link>/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</link>
+    <link>https://maye.netlify.app/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</link>
     <description>Recent content in 产品经理 on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>万字好文：某三线城市年薪20万产品总监的面试题</title>
-      <link>/post/2021-05-06-%E4%B8%87%E5%AD%97%E5%A5%BD%E6%96%87%E6%9F%90%E4%B8%89%E7%BA%BF%E5%9F%8E%E5%B8%82%E5%B9%B4%E8%96%AA20%E4%B8%87%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <link>https://maye.netlify.app/post/2021-05-06-%E4%B8%87%E5%AD%97%E5%A5%BD%E6%96%87%E6%9F%90%E4%B8%89%E7%BA%BF%E5%9F%8E%E5%B8%82%E5%B9%B4%E8%96%AA20%E4%B8%87%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/2021-05-06-%E4%B8%87%E5%AD%97%E5%A5%BD%E6%96%87%E6%9F%90%E4%B8%89%E7%BA%BF%E5%9F%8E%E5%B8%82%E5%B9%B4%E8%96%AA20%E4%B8%87%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <guid>https://maye.netlify.app/post/2021-05-06-%E4%B8%87%E5%AD%97%E5%A5%BD%E6%96%87%E6%9F%90%E4%B8%89%E7%BA%BF%E5%9F%8E%E5%B8%82%E5%B9%B4%E8%96%AA20%E4%B8%87%E4%BA%A7%E5%93%81%E6%80%BB%E7%9B%91%E7%9A%84%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 coffee.pmcaff.com
  《简介》 某同学去申请了一份三线城市的产品总监职位，在初步沟通后，对方发来一套试卷，要求在30分钟内完成提交。那么针对20万薪资的要求，来看下题目和回答之间的关联性。（有些涉及到个人隐私的会做一些更改）。 以下回答共用时40分钟（不含最后一题），然后写思考，适当的修改答案，重新写最后一题共用时4个小时。
 1、为什么离开上家公司？为什么要做产品？自己有哪些特质适合做产品？ 思考：关于一个题目中有多个问题，需要分别去回答。离职的原因不外乎是需要受了委屈、钱少、距离家远、想要换个行业这些条件，但回答肯定不能这么直白，而且后面的问题还是针对你要跨行业来说明，所以回答时做一个区分和关联。

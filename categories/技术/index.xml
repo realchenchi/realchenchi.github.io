@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on 马野先生</title>
-    <link>/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://maye.netlify.app/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>服务端高并发分布式架构演进之路</title>
-      <link>/post/2020-10-23-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%AB%98%E5%B9%B6%E5%8F%91%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF/</link>
+      <link>https://maye.netlify.app/post/2020-10-23-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%AB%98%E5%B9%B6%E5%8F%91%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF/</link>
       <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-10-23-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%AB%98%E5%B9%B6%E5%8F%91%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF/</guid>
+      <guid>https://maye.netlify.app/post/2020-10-23-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E9%AB%98%E5%B9%B6%E5%8F%91%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 segmentfault.com
   概述   本文以淘宝作为例子，介绍从一百个到千万级并发情况下服务端的架构的演进过程，同时列举出每个演进阶段会遇到的相关技术，让大家对架构的演进有一个整体的认知，文章最后汇总了一些架构设计的原则。
  特别说明：本文以淘宝为例仅仅是为了便于说明演进过程可能遇到的问题，并非是淘宝真正的技术演进路径
@@ -34,10 +29,10 @@
     
     <item>
       <title>Spring Bean工作原理详解</title>
-      <link>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://maye.netlify.app/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://maye.netlify.app/post/2020-09-01-spring-bean-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
   本文 Github 开源项目 https://github.com/Snailclimb/JavaGuide，只供自己学习总结无商业用途，如有侵权，联系删除
  前言 在 Spring 中，那些组成应用程序的主体及由 Spring IOC 容器所管理的对象，被称之为 bean。简单地讲，bean 就是由 IOC 容器初始化、装配及管理的对象，除此之外，bean 就与应用程序中的其他对象没有什么区别了。而 bean 的定义以及 bean 相互间的依赖关系将通过配置元数据来描述。
@@ -47,10 +42,10 @@ bean 的作用域 创建一个 bean 定义，其实质是用该 bean 定义对�
     
     <item>
       <title>Git Fetch &amp; Pull 详解</title>
-      <link>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://maye.netlify.app/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://maye.netlify.app/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
  1、简单概括 先用一张图来理一下git fetch和git pull的概念：
 可以简单的概括为：
@@ -66,10 +61,10 @@ A---C---E---G(master) \  / B---D---F（dev） 现在 ABCDEFG 属于 master，G �
     
     <item>
       <title>Git Rebase 原理</title>
-      <link>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</link>
+      <link>https://maye.netlify.app/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</guid>
+      <guid>https://maye.netlify.app/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 segmentfault.com
   原文地址
 Git 系列文章地址
@@ -82,10 +77,10 @@ Git 系列文章地址
     
     <item>
       <title>百亿级微信红包的高并发资金交易系统设计方案</title>
-      <link>/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
+      <link>https://maye.netlify.app/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</link>
       <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
+      <guid>https://maye.netlify.app/post/2020-05-19-%E7%99%BE%E4%BA%BF%E7%BA%A7%E5%BE%AE%E4%BF%A1%E7%BA%A2%E5%8C%85%E7%9A%84%E9%AB%98%E5%B9%B6%E5%8F%91%E8%B5%84%E9%87%91%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://www.infoq.cn/article/2017hongbao-weixin
  2017 年 1 月 28 日，正月初一，微信公布了用户在除夕当天收发微信红包的数量——142 亿个，而其收发峰值也已达到 76 万每秒。百亿级别的红包，如何保障并发性能与资金安全？这给微信带来了超级挑战。面对挑战，微信红包在分析了业界 “秒杀” 系统解决方案的基础上，采用了 SET 化、请求排队串行化、双维度分库表等设计，形成了独特的高并发、资金安全系统解决方案。实践证明，该方案表现稳定，且实现了除夕夜系统零故障运行。
 本文将为读者介绍百亿级别红包背后的系统高并发设计方案，包括微信红包的两大业务特点、微信红包系统的技术难点、解决高并发问题通常使用的方案，以及微信红包系统的高并发解决方案。
@@ -102,10 +97,10 @@ Git 系列文章地址
     
     <item>
       <title>动画图解 Git 命令，一看就懂</title>
-      <link>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
+      <link>https://maye.netlify.app/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
+      <guid>https://maye.netlify.app/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://segmentfault.com/a/1190000022404482
  无论是开发、运维，还是测试，大家都知道 Git 在日常工作中的地位。所以，也是大家的必学、必备技能之一。之前公众号也发过很多 git 相关的文章。
 但是呢，民工哥，也经常在后台看到读者说，命令太多了不好记啊，时间长了不用又忘记了等等的吐槽。是啊，要学一门技术真难，何况现在技术更新、迭代这么快&amp;hellip;..
@@ -126,10 +121,10 @@ git rebase 还提供了 6 种操作模式：
     
     <item>
       <title>Markdown语法</title>
-      <link>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</link>
+      <link>https://maye.netlify.app/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://maye.netlify.app/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     

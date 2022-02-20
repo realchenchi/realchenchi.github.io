@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh_CN"><head>
+<html lang="zh-cn"><head>
     <title>马野先生</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#000084" />
-    <link rel="icon" href="//favicon.ico">
-    <link rel="canonical" href="/">
+    <link rel="icon" href="https://maye.netlify.app/favicon.ico">
+    <link rel="canonical" href="https://maye.netlify.app">
     
     
 </head>
@@ -16,7 +16,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="/">马野先生</a>
+            <a class="brand" href="https://maye.netlify.app">马野先生</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -61,7 +61,7 @@
 <p>本文主要讲解下 Git Rebase 的基本概念用法、其内部原理以及我们在真实项目中使用 Git Rebase 应该遵循的原则以及为啥需要遵循这些原则。</p>
 <p><img src="https://image-static.segmentfault.com/369/341/3693413834-5783bd4386c57_articlex" alt=""></p>
 <p>相信对于 rebase 肯定不会陌生，就好像上图描述的过程一样，当你使用 rebase 命令的时候，即好像将你需要去 rebase 的分支拔下来然后重新插到另一个分支上。官方对于 rebase 的描述为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“git-rebase: Forward-port local commits to the updated upstream head”— git doc</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">“git-rebase: Forward-port local commits to the updated upstream head”— git doc</code></pre></div>
 <p>翻译一下，就是讲你在某个分支上的所有提交记录移花接木到另一个分支上。这边需要强调一个概念：reapply，使用 rebase 并不是简单地好像你用 ctrl-x/ctrl-v 进行剪切复制一样，rebase 会依次地将你所要操作的分支的所有提交应用到目标分支上。也就是说，实际上在执行 rebase 的时候，有两个隐含的注意点：</p>
 <ul>
 <li>
@@ -88,7 +88,7 @@
 <p>然后呢，当 Anna 也进行推送的时候，她会得到如下的提醒：</p>
 <p><img src="https://image-static.segmentfault.com/228/462/2284624881-5783bdd27a648_articlex" alt=""></p>
 <p>这个消息很正常，没啥特殊的，只是 Git 提醒 Anna 她本地的版本与远程分支并不一致，在 Anna 提交之前，分支中的 Commit 序列是如下这样的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">A--B--C--D<span style="color:#960050;background-color:#1e0010">&#39;</span>   origin/feature 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">A--B--C--D<span style="color:#960050;background-color:#1e0010">&#39;</span>   origin/feature 
 
 A--B--D--E    feature        </code></pre></div>
 <p>在进行 Pull 操作之后，Git 会进行自动地合并操作，结果大概是这样的：</p>
@@ -100,7 +100,7 @@ A--B--D--E    feature        </code></pre></div>
 
     <br>
     <hr>
-    <h2><a href="/">返回主页</a></h2>
+    <h2><a href="https://maye.netlify.app">返回主页</a></h2>
 </div>
 
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh_CN"><head>
+<html lang="zh-cn"><head>
     <title>马野先生</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#000084" />
-    <link rel="icon" href="//favicon.ico">
-    <link rel="canonical" href="/">
+    <link rel="icon" href="https://maye.netlify.app/favicon.ico">
+    <link rel="canonical" href="https://maye.netlify.app">
     
     
 </head>
@@ -16,7 +16,7 @@
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
-            <a class="brand" href="/">马野先生</a>
+            <a class="brand" href="https://maye.netlify.app">马野先生</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     
@@ -65,35 +65,35 @@
 <p>五种作用域中，<strong>request、session</strong> 和 <strong>global session</strong> 三种作用域仅在基于 web 的应用中使用（不必关心你所采用的是什么 web 应用框架），只能用在基于 web 的 Spring ApplicationContext 环境。</p>
 <h2 id="singleton">singleton</h2>
 <p><code>singleton唯一 bean 实例</code>，<strong>当一个 bean 的作用域为 singleton，那么 Spring IoC 容器中只会存在一个共享的 bean 实例，并且所有对 bean 的请求，只要 id 与该 bean 定义相匹配，则只会返回 bean 的同一实例。</strong> singleton 是单例类型 (对应于单例模式)，就是在创建起容器时就同时自动创建了一个 bean 的对象，不管你是否使用，但我们可以指定 Bean 节点的 <code>lazy-init=”true”</code> 来延迟初始化 bean，这时候，只有在第一次获取 bean 时才会初始化 bean，即第一次请求该 bean 时才初始化。 每次获取到的对象都是同一个对象。注意，singleton 作用域是 Spring 中的缺省作用域。要在 XML 中将 bean 定义成 singleton ，可以这样配置：</p>
-<pre><code>&lt;bean id=&quot;ServiceImpl&quot; class=&quot;cn.csdn.service.ServiceImpl&quot; scope=&quot;singleton&quot;&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;ServiceImpl&quot; class=&quot;cn.csdn.service.ServiceImpl&quot; scope=&quot;singleton&quot;&gt;
 </code></pre><p>也可以通过 <code>@Scope</code> 注解（它可以显示指定 bean 的作用范围。）的方式</p>
-<pre><code>@Service
+<pre tabindex="0"><code>@Service
 @Scope(&quot;singleton&quot;)
 public class ServiceImpl{
 
 }
 </code></pre><h2 id="prototype">prototype</h2>
 <p><code>prototype每次请求都会创建一个新的 bean 实例</code>, 当一个 bean 的作用域为 prototype，表示一个 bean 定义对应多个对象实例。<strong>prototype 作用域的 bean 会导致在每次对该 bean 请求</strong>（将其注入到另一个 bean 中，或者以程序的方式调用容器的 getBean() 方法**）时都会创建一个新的 bean 实例。prototype 是原型类型，它在我们创建容器的时候并没有实例化，而是当我们获取 bean 的时候才会去创建一个对象，而且我们每次获取到的对象都不是同一个对象。根据经验，对有状态的 bean 应该使用 prototype 作用域，而对无状态的 bean 则应该使用 singleton 作用域。** 在 XML 中将 bean 定义成 prototype ，可以这样配置：</p>
-<pre><code>&lt;bean id=&quot;account&quot; class=&quot;com.foo.DefaultAccount&quot; scope=&quot;prototype&quot;/&gt;  
+<pre tabindex="0"><code>&lt;bean id=&quot;account&quot; class=&quot;com.foo.DefaultAccount&quot; scope=&quot;prototype&quot;/&gt;  
  或者
 &lt;bean id=&quot;account&quot; class=&quot;com.foo.DefaultAccount&quot; singleton=&quot;false&quot;/&gt;
 </code></pre><p>通过 <code>@Scope</code> 注解的方式实现就不做演示了。</p>
 <h2 id="request">request</h2>
 <p><code>request每一次HTTP请求都会产生一个新的bean，该bean仅在当前HTTP request内有效</code>,<strong>request 只适用于 Web 程序，每一次 HTTP 请求都会产生一个新的 bean，同时该 bean 仅在当前 HTTP request 内有效，当请求结束后，该对象的生命周期即告结束。</strong> 在 XML 中将 bean 定义成 request ，可以这样配置：</p>
-<pre><code>&lt;bean id=&quot;loginAction&quot; class=cn.csdn.LoginAction&quot; scope=&quot;request&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;loginAction&quot; class=cn.csdn.LoginAction&quot; scope=&quot;request&quot;/&gt;
 </code></pre><h2 id="session">session</h2>
 <p><code>session每一次HTTP请求都会产生一个新的 bean，该bean仅在当前 HTTP session 内有效</code>,<strong>session 只适用于 Web 程序，session 作用域表示该针对每一次 HTTP 请求都会产生一个新的 bean，同时该 bean 仅在当前 HTTP session 内有效. 与 request 作用域一样，可以根据需要放心的更改所创建实例的内部状态，而别的 HTTP session 中根据 userPreferences 创建的实例，将不会看到这些特定于某个 HTTP session 的状态变化。当 HTTP session 最终被废弃的时候，在该 HTTP session 作用域内的 bean 也会被废弃掉。</strong></p>
-<pre><code>&lt;bean id=&quot;userPreferences&quot; class=&quot;com.foo.UserPreferences&quot; scope=&quot;session&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;userPreferences&quot; class=&quot;com.foo.UserPreferences&quot; scope=&quot;session&quot;/&gt;
 </code></pre><h2 id="globalsession">globalSession</h2>
 <p>global session 作用域类似于标准的 HTTP session 作用域，不过仅仅在基于 portlet 的 web 应用中才有意义。Portlet 规范定义了全局 Session 的概念，它被所有构成某个 portlet web 应用的各种不同的 portle t 所共享。在 global session 作用域中定义的 bean 被限定于全局 portlet Session 的生命周期范围内。</p>
-<pre><code>&lt;bean id=&quot;user&quot; class=&quot;com.foo.Preferences &quot;scope=&quot;globalSession&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;user&quot; class=&quot;com.foo.Preferences &quot;scope=&quot;globalSession&quot;/&gt;
 </code></pre><h1 id="bean-的生命周期">bean 的生命周期</h1>
 <p>Spring Bean 是 Spring 应用中最最重要的部分了。所以来看看 Spring 容器在初始化一个 bean 的时候会做那些事情，顺序是怎样的，在容器关闭的时候，又会做哪些事情。</p>
 <blockquote>
 <p>spring 版本：4.2.3.RELEASE<br>
 鉴于 Spring 源码是用 gradle 构建的，我也决定舍弃我大 maven，尝试下洪菊推荐过的 gradle。运行 beanLifeCycle 模块下的 junit test 即可在控制台看到如下输出，可以清楚了解 Spring 容器在创建，初始化和销毁 Bean 的时候依次做了那些事情。</p>
 </blockquote>
-<pre><code>Spring容器初始化
+<pre tabindex="0"><code>Spring容器初始化
 =====================================
 调用GiraffeService无参构造函数
 GiraffeService中利用set方法设置属性值
@@ -124,7 +124,7 @@ Spring容器关闭
 <p><strong>1. 实现 InitializingBean 和 DisposableBean 接口</strong></p>
 <p>这两个接口都只包含一个方法。通过实现 InitializingBean 接口的 afterPropertiesSet() 方法可以在 Bean 属性值设置好之后做一些操作，实现 DisposableBean 接口的 destroy() 方法可以在销毁 Bean 之前做一些操作。</p>
 <p>例子如下：</p>
-<pre><code>public class GiraffeService implements InitializingBean,DisposableBean {
+<pre tabindex="0"><code>public class GiraffeService implements InitializingBean,DisposableBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println(&quot;执行InitializingBean接口的afterPropertiesSet方法&quot;);
@@ -138,7 +138,7 @@ Spring容器关闭
 <p><strong>2. 在 bean 的配置文件中指定 init-method 和 destroy-method 方法</strong></p>
 <p>Spring 允许我们创建自己的 init 方法和 destroy 方法，只要在 Bean 的配置文件中指定 init-method 和 destroy-method 的值就可以在 Bean 初始化时和销毁之前执行一些操作。</p>
 <p>例子如下：</p>
-<pre><code>public class GiraffeService {
+<pre tabindex="0"><code>public class GiraffeService {
     //通过&lt;bean&gt;的destroy-method属性指定的销毁方法
     public void destroyMethod() throws Exception {
         System.out.println(&quot;执行配置的destroy-method&quot;);
@@ -149,14 +149,14 @@ Spring容器关闭
     }
 }
 </code></pre><p>配置文件中的配置：</p>
-<pre><code>&lt;bean &gt;
+<pre tabindex="0"><code>&lt;bean &gt;
 &lt;/bean&gt;
 </code></pre><p>需要注意的是自定义的 init-method 和 post-method 方法可以抛异常但是不能有参数。</p>
 <p>这种方式比较推荐，因为可以自己创建方法，无需将 Bean 的实现直接依赖于 spring 的框架。</p>
 <p><strong>3. 使用 @PostConstruct 和 @PreDestroy 注解</strong></p>
 <p>除了 xml 配置的方式，Spring 也支持用 <code>@PostConstruct</code>和 <code>@PreDestroy</code>注解来指定 <code>init</code> 和 <code>destroy</code> 方法。这两个注解均在<code>javax.annotation</code> 包中。为了注解可以生效，需要在配置文件中定义 org.springframework.context.annotation.CommonAnnotationBeanPostProcessor 或 context:annotation-config</p>
 <p>例子如下：</p>
-<pre><code>public class GiraffeService {
+<pre tabindex="0"><code>public class GiraffeService {
     @PostConstruct
     public void initPostConstruct(){
         System.out.println(&quot;执行PostConstruct注解标注的方法&quot;);
@@ -167,7 +167,7 @@ Spring容器关闭
     }
 }
 </code></pre><p>配置文件：</p>
-<pre><code>&lt;bean class=&quot;org.springframework.context.annotation.CommonAnnotationBeanPostProcessor&quot; /&gt;
+<pre tabindex="0"><code>&lt;bean class=&quot;org.springframework.context.annotation.CommonAnnotationBeanPostProcessor&quot; /&gt;
 </code></pre><h2 id="实现-xxxaware-接口-在-bean-中使用-spring-框架的一些对象">实现 XxxAware 接口 在 Bean 中使用 Spring 框架的一些对象</h2>
 <p><code>实现XxxAware接口 在Bean中使用Spring框架的一些对象</code>，有些时候我们需要在 Bean 的初始化中使用 Spring 框架自身的一些对象来执行一些操作，比如获取 ServletContext 的一些参数，获取 ApplicaitionContext 中的 BeanDefinition 的名字，获取 Bean 在容器中的名字等等。为了让 Bean 可以获取到框架自身的一些对象，Spring 提供了一组名为 * Aware 的接口。</p>
 <p>这些接口均继承于<code>org.springframework.beans.factory.Aware</code>标记接口，并提供一个将由 Bean 实现的 set * 方法, Spring 通过基于 setter 的依赖注入方式使相应的对象可以被 Bean 使用。<br>
@@ -181,7 +181,7 @@ Spring容器关闭
 <li><strong>ServletContextAware</strong>: 在一个 MVC 应用中可以获取 ServletContext 对象，可以读取 context 中的参数。</li>
 <li><strong>ServletConfigAware</strong>： 在一个 MVC 应用中可以获取 ServletConfig 对象，可以读取 config 中的参数。</li>
 </ul>
-<pre><code>public class GiraffeService implements   ApplicationContextAware,
+<pre tabindex="0"><code>public class GiraffeService implements   ApplicationContextAware,
         ApplicationEventPublisherAware, BeanClassLoaderAware, BeanFactoryAware,
         BeanNameAware, EnvironmentAware, ImportAware, ResourceLoaderAware{
          @Override
@@ -225,7 +225,7 @@ Spring容器关闭
 <p>上面的 * Aware 接口是针对某个实现这些接口的 Bean 定制初始化的过程，<br>
 Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初始化过程，只需提供一个实现 BeanPostProcessor 接口的类即可。 该接口中包含两个方法，postProcessBeforeInitialization 和 postProcessAfterInitialization。 postProcessBeforeInitialization 方法会在容器中的 Bean 初始化之前执行， postProcessAfterInitialization 方法在容器中的 Bean 初始化之后执行。</p>
 <p>例子如下：</p>
-<pre><code>public class CustomerBeanPostProcessor implements BeanPostProcessor {
+<pre tabindex="0"><code>public class CustomerBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         System.out.println(&quot;执行BeanPostProcessor的postProcessBeforeInitialization方法,beanName=&quot; + beanName);
@@ -238,7 +238,7 @@ Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初�
     }
 }
 </code></pre><p>要将 BeanPostProcessor 的 Bean 像其他 Bean 一样定义在配置文件中</p>
-<pre><code>&lt;bean class=&quot;com.giraffe.spring.service.CustomerBeanPostProcessor&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean class=&quot;com.giraffe.spring.service.CustomerBeanPostProcessor&quot;/&gt;
 </code></pre><h1 id="总结">总结</h1>
 <p>所以。。。结合第一节控制台输出的内容，Spring Bean 的生命周期是这样纸的：</p>
 <ul>
@@ -263,11 +263,11 @@ Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初�
 <p><strong>其实很多时候我们并不会真的去实现上面说描述的那些接口，那么下面我们就除去那些接口，针对 bean 的单例和非单例来描述下 bean 的生命周期：</strong></p>
 <h2 id="单例管理的对象">单例管理的对象</h2>
 <p>当 scope=”singleton”，即默认情况下，会在启动容器时（即实例化容器时）时实例化。但我们可以指定 Bean 节点的 lazy-init=”true” 来延迟初始化 bean，这时候，只有在第一次获取 bean 时才会初始化 bean，即第一次请求该 bean 时才初始化。如下配置：</p>
-<pre><code>&lt;bean id=&quot;ServiceImpl&quot; class=&quot;cn.csdn.service.ServiceImpl&quot; lazy-init=&quot;true&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;ServiceImpl&quot; class=&quot;cn.csdn.service.ServiceImpl&quot; lazy-init=&quot;true&quot;/&gt;
 </code></pre><p>如果想对所有的默认单例 bean 都应用延迟初始化，可以在根节点 beans 设置 default-lazy-init 属性为 true，如下所示：</p>
-<pre><code>&lt;beans default-lazy-init=&quot;true&quot; …&gt;
+<pre tabindex="0"><code>&lt;beans default-lazy-init=&quot;true&quot; …&gt;
 </code></pre><p>默认情况下，Spring 在读取 xml 文件的时候，就会创建对象。在创建对象的时候先调用构造器，然后调用 init-method 属性值中所指定的方法。对象在被销毁的时候，会调用 destroy-method 属性值中所指定的方法（例如调用 Container.destroy() 方法的时候）。写一个测试类，代码如下：</p>
-<pre><code>public class LifeBean {
+<pre tabindex="0"><code>public class LifeBean {
     private String name;  
 
     public LifeBean(){  
@@ -291,10 +291,10 @@ Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初�
     }  
 }
 </code></pre><p>　life.xml 配置如下：</p>
-<pre><code>&lt;bean id=&quot;life\_singleton&quot; class=&quot;com.bean.LifeBean&quot; scope=&quot;singleton&quot; 
+<pre tabindex="0"><code>&lt;bean id=&quot;life\_singleton&quot; class=&quot;com.bean.LifeBean&quot; scope=&quot;singleton&quot; 
             init-method=&quot;init&quot; destroy-method=&quot;destory&quot; lazy-init=&quot;true&quot;/&gt;
 </code></pre><p>测试代码：</p>
-<pre><code>public class LifeTest {
+<pre tabindex="0"><code>public class LifeTest {
     @Test 
     public void test() {
         AbstractApplicationContext container = 
@@ -305,7 +305,7 @@ Spring 同样可以针对容器中的所有 Bean，或者某些 Bean 定制初�
     }
 }
 </code></pre><p>运行结果：</p>
-<pre><code>LifeBean()构造函数
+<pre tabindex="0"><code>LifeBean()构造函数
 this is init of lifeBean
 com.bean.LifeBean@573f2bb1
 ……
@@ -313,9 +313,9 @@ this is destory of lifeBean com.bean.LifeBean@573f2bb1
 </code></pre><h2 id="非单例管理的对象">非单例管理的对象</h2>
 <p>当<code>scope=”prototype”</code>时，容器也会延迟初始化 bean，Spring 读取 xml 文件的时候，并不会立刻创建对象，而是在第一次请求该 bean 时才初始化（如调用 getBean 方法时）。在第一次请求每一个 prototype 的 bean 时，Spring 容器都会调用其构造器创建这个对象，然后调用<code>init-method</code>属性值中所指定的方法。对象销毁的时候，Spring 容器不会帮我们调用任何方法，因为是非单例，这个类型的对象有很多个，Spring 容器一旦把这个对象交给你之后，就不再管理这个对象了。</p>
 <p>为了测试 prototype bean 的生命周期 life.xml 配置如下：</p>
-<pre><code>&lt;bean id=&quot;life\_prototype&quot; class=&quot;com.bean.LifeBean&quot; scope=&quot;prototype&quot; init-method=&quot;init&quot; destroy-method=&quot;destory&quot;/&gt;
+<pre tabindex="0"><code>&lt;bean id=&quot;life\_prototype&quot; class=&quot;com.bean.LifeBean&quot; scope=&quot;prototype&quot; init-method=&quot;init&quot; destroy-method=&quot;destory&quot;/&gt;
 </code></pre><p>测试程序：</p>
-<pre><code>public class LifeTest {
+<pre tabindex="0"><code>public class LifeTest {
     @Test 
     public void test() {
         AbstractApplicationContext container = new ClassPathXmlApplicationContext(&quot;life.xml&quot;);
@@ -328,7 +328,7 @@ this is destory of lifeBean com.bean.LifeBean@573f2bb1
     }
 }
 </code></pre><p>运行结果：</p>
-<pre><code>LifeBean()构造函数
+<pre tabindex="0"><code>LifeBean()构造函数
 this is init of lifeBean
 com.bean.LifeBean@573f2bb1
 LifeBean()构造函数
@@ -354,7 +354,7 @@ this is destory of lifeBean com.bean.LifeBean@573f2bb1
 
     <br>
     <hr>
-    <h2><a href="/">返回主页</a></h2>
+    <h2><a href="https://maye.netlify.app">返回主页</a></h2>
 </div>
 
 

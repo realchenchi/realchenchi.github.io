@@ -2,31 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>原创 on 马野先生</title>
-    <link>/tags/%E5%8E%9F%E5%88%9B/</link>
+    <link>https://maye.netlify.app/tags/%E5%8E%9F%E5%88%9B/</link>
     <description>Recent content in 原创 on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/%E5%8E%9F%E5%88%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>留学生回来报效祖国，却惨遭。。。</title>
-      <link>/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</link>
+      <link>https://maye.netlify.app/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</guid>
-      <description> </description>
+      <guid>https://maye.netlify.app/post/2020-05-01-%E7%95%99%E5%AD%A6%E7%94%9F%E5%9B%9E%E6%9D%A5%E6%8A%A5%E6%95%88%E7%A5%96%E5%9B%BD/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>留学生回国航班被取消，近一个月不敢出门，他想对大家说</title>
-      <link>/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</link>
+      <link>https://maye.netlify.app/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</guid>
-      <description> </description>
+      <guid>https://maye.netlify.app/post/2020-04-04-%E7%95%99%E5%AD%A6%E7%94%9F%E6%AF%95%E4%B8%9A%E5%90%8E%E8%88%AA%E7%8F%AD%E8%A2%AB%E5%8F%96%E6%B6%88%E4%BB%96%E6%83%B3%E5%AF%B9%E5%A4%A7%E5%AE%B6%E8%AF%B4/</guid>
+      <description></description>
     </item>
     
   </channel>

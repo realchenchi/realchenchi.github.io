@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on 马野先生</title>
-    <link>/tags/markdown/</link>
+    <link>https://maye.netlify.app/tags/markdown/</link>
     <description>Recent content in Markdown on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown语法</title>
-      <link>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</link>
+      <link>https://maye.netlify.app/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://maye.netlify.app/post/2020-05-11-markdown%E8%AF%AD%E6%B3%95/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     

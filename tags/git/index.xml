@@ -2,21 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on 马野先生</title>
-    <link>/tags/git/</link>
+    <link>https://maye.netlify.app/tags/git/</link>
     <description>Recent content in Git on 马野先生</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh_CN</language>
-    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://maye.netlify.app/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Fetch &amp; Pull 详解</title>
-      <link>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://maye.netlify.app/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://maye.netlify.app/post/2020-07-13-git-fetch-pull-%E8%AF%A6%E8%A7%A3/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com
  1、简单概括 先用一张图来理一下git fetch和git pull的概念：
 可以简单的概括为：
@@ -32,10 +27,10 @@ A---C---E---G(master) \  / B---D---F（dev） 现在 ABCDEFG 属于 master，G �
     
     <item>
       <title>Git Rebase 原理</title>
-      <link>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</link>
+      <link>https://maye.netlify.app/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</link>
       <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</guid>
+      <guid>https://maye.netlify.app/post/2020-07-13-git-rebase-%E5%8E%9F%E7%90%86/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 segmentfault.com
   原文地址
 Git 系列文章地址
@@ -48,10 +43,10 @@ Git 系列文章地址
     
     <item>
       <title>动画图解 Git 命令，一看就懂</title>
-      <link>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
+      <link>https://maye.netlify.app/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
+      <guid>https://maye.netlify.app/post/2020-05-14-%E5%8A%A8%E7%94%BB%E5%9B%BE%E8%A7%A3-git-%E5%91%BD%E4%BB%A4%E4%B8%80%E7%9C%8B%E5%B0%B1%E6%87%82/</guid>
       <description>本文由 简悦 SimpRead 转码， 原文地址 https://segmentfault.com/a/1190000022404482
  无论是开发、运维，还是测试，大家都知道 Git 在日常工作中的地位。所以，也是大家的必学、必备技能之一。之前公众号也发过很多 git 相关的文章。
 但是呢，民工哥，也经常在后台看到读者说，命令太多了不好记啊，时间长了不用又忘记了等等的吐槽。是啊，要学一门技术真难，何况现在技术更新、迭代这么快&amp;hellip;..
